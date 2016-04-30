@@ -1,0 +1,14 @@
+{
+  "name": "react-bem_cli",
+  "version": "1.0.0",
+  "description": "Cli to create Bem-like React Components",
+  "main": "cc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rmakarov94@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "humps": "^1.1.0"
+  }
+}
