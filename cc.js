@@ -10,7 +10,8 @@ const componentName = args[0];
 const componentNameCamelized = humps.camelize(componentName);
 const pwd = process.env.PWD;
 
-const JS_TEMPLATE = `// @flow \n
+const JS_TEMPLATE = `// @flow 
+'use strict'; \n
 import './index.css';\n
 type _${componentNameCamelized} = {\n  className: string\n};\n
 export default ({className=''} : _${componentNameCamelized}) => (\n)`;
