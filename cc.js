@@ -12,7 +12,7 @@ const pwd = process.env.PWD;
 
 const JS_TEMPLATE = `// @flow \n
 import './index.css';\n
-type _${componentNameCamelized} = {\nclassName: string\n};\n
+type _${componentNameCamelized} = {\n  className: string\n};\n
 export default ({className=''} : _${componentNameCamelized}) => (\n)`;
 const CSS_NAME = componentName.charAt(0).toLowerCase() + componentName.slice(1);
 const CSS_TEMPLATE = `/* @define ${CSS_NAME} */\n
