@@ -4,6 +4,7 @@
   "description": "Cli to create Bem-like React components structure",
   "main": "./crc.js",
   "author": "rmakarov94@gmail.com",
+  "repository": "https://github.com/rmakarov94/React-cli-for-bem-like-structure",
   "bin": {
     "crc": "./crc.js"
   },
