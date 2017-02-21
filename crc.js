@@ -17,6 +17,7 @@ if (args[0] === 'class') {
 }
 
 const componentNameCamelized = humps.camelize(componentName)
+const componentCssName = humps.decamelize(componentName, {separator : '-'})
 const componentClassName = componentNameCamelized.charAt(0).toUpperCase() + componentNameCamelized.slice(1)
 const componentFile = componentName + '.js'
 
@@ -56,9 +57,9 @@ js_expressions_class
   )
 const JS_TEMPLATE = isClass ? js_expressions_class.join(EOL) : js_expressions_func.join(EOL)
 
-const CSS_NAME = componentName.charAt(0).toLowerCase() + componentName.slice(1);
+const CSS_NAME = componentCssName.charAt(0).toLowerCase() + componentCssName.slice(1);
 const CSS_TEMPLATE = `/* @define ${CSS_NAME} */${EOL}
-.${CSS_NAME} {${EOL}`
+.${CSS_NAME} {${EOL}}`
 const PACKAGE_JSON = JSON.stringify({
   private: true,
   name: componentName,
